@@ -32,19 +32,59 @@ This file contains a number of front-end interview questions that can be used wh
 * Which version control systems are you familiar with?
 * Can you describe your workflow when you create a web page?
 * If you have 5 different stylesheets, how would you best integrate them into the site?
+
+<p class="answer">Bundle and Minify</p>
+<p> Follow Up: What tools what you use to do this? NPM packages? How would you make sure that the team is working correctly together? Could you put gated git checkins? </p>
+
 * Can you describe the difference between progressive enhancement and graceful degradation?
+  
+<p> Progressive Enhancement - means that you start with the basics of your website then progressive add more functionality only if that functionality is capable of working.  </p>
+
+<p> Graceful Degradation - means that you build the website that you want with all the bells and whistles, then in older browers you make sure that the experience still works but functionality is lost. </p>
+
+<p>Basically the differences are building from the ground up or from product you want down.</p>
+
 * How would you optimize a website's assets/resources?
+
+<p> Minify both CSS and JS </p>
+<p> Images should be run through an optimizer and use a sprite if possible. </p>
+<p> Cyclomatic Complexity could be checked on JS </p>
+
 * How many resources will a browser download from a given domain at a time?
   * What are the exceptions?
+  
+<p>I dont think the numbers really matter what matters is that the browser has a set number that it downloads for each host. This means that you should try to limit the number of requests. Also you could host static files on a cdn. </p>
+
 * Name 3 ways to decrease page load (perceived or actual load time).
+
+<p>Actual: host your static images on a cdn that is closer to the user downloading the assets. Minify and Bundle your files. Decrease amount of repaints on a given page from JS. </p>
+
+<p>Percieved: Loading spinners. Load important content first then load secondary content. </p>
+
 * If you jumped on a project and they used tabs and you used spaces, what would you do?
+
+<p>change my editor settings to spaces / tabs based on the existing project</p>
+
 * Describe how you would create a simple slideshow page.
 * If you could master one technology this year, what would it be?
 * Explain the importance of standards and standards bodies.
 * What is Flash of Unstyled Content? How do you avoid FOUC?
+
+<p>CSS: Load stylesheets first. Angular: use ng-cloak. Avoid applying styles based on javascript.</p>
+
 * Explain what ARIA and screenreaders are, and how to make a website accessible.
+
+<p>https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA</p>
+
 * Explain some of the pros and cons for CSS animations versus JavaScript animations.
+
+<p>https://css-tricks.com/myth-busting-css-animations-vs-javascript/</p>
+<p>According to this article javascript with translate3d is faster than css. Jquery still slow. </p>
+
 * What does CORS stand for and what issue does it address?
+
+<p>Cross Orgin Resource Sharing</p>
+<p>https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS</p>
 
 #### HTML Questions:
 
