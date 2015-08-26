@@ -1,4 +1,4 @@
-﻿#Front-end Job Interview Questions
+﻿-[#Front-end Job Interview Questions
 
 This repo contains a number of front-end interview questions that can be used when vetting potential candidates. It is by no means recommended to use every single question here on the same candidate (that would take hours). Choosing a few items from this list should help you vet the intended skills you require.
 
@@ -26,7 +26,11 @@ The majority of the questions were plucked from an [oksoclap](http://oksoclap.co
 
 * What did you learn yesterday/this week?
 * What excites or interests you about coding?
+
+Creating something new. Creating something people can use to make their lifes easier. Solving difficult problems. 
+
 * What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
+
 * Talk about your preferred development environment. (OS, Editor or IDE, Browsers, Tools etc.)
 * Which version control systems are you familiar with?
 * Can you describe your workflow when you create a web page?
@@ -64,18 +68,47 @@ The majority of the questions were plucked from an [oksoclap](http://oksoclap.co
 ####[[⬆]](#toc) <a name='html'>HTML Questions:</a>
 
 * What's a `doctype` do?
+
+When omitted, browsers tend to use a different rendering mode that is incompatible with some specifications. Including the DOCTYPE in a document ensures that the browser makes a best-effort attempt at following the relevant specifications.
+
 * What's the difference between standards mode and quirks mode?
+
+quirks mode is when internet explorer renders in ie7 instead of the default browser version
+
 * What are the limitations when serving XHTML pages?
-  * Are there any problems with serving pages as `application/xhtml+xml`?
+stricter version of html <br></br> <textarea></textarea>
+
 * How do you serve a page with content in multiple languages?
+
+<link rel=”alternate” hreflang="fr" href="http://fr.example.com/javier-lopez" />
+
   * What kind of things must you be wary of when design or developing for multilingual sites?
+
+  text in images, length of character strings
+
 * What are `data-` attributes good for?
+
+  data attributes can be used to store information / options for use in javascript
+
 * Consider HTML5 as an open web platform. What are the building blocks of HTML5?
+
+section, article, aside,header, footer, address,main
+
 * Describe the difference between cookies, sessionStorage and localStorage.
+sessionStorage is stored until browser closes
+localStorage is used forever
+cookies have an expiration date
+
 * Can you explain the difference between `GET` and `POST`?
+GET information is passed through the url
+POST information is passed through headers on request
+
 
 ####[[⬆]](#toc) <a name='css'>CSS Questions:</a>
 * What is the difference between classes and IDs in CSS?
+
+In css not much, in html ids signify only a single elment. IDs are specific to an element. I dont like to use in css because I prefer to keep my css more object oriented
+
 * Describe what a "reset" CSS file does and how it's useful.
   * Bonus for pointing out the downsides of a "reset", and/or mentioning "normalize" as a better alternative.
 * Describe Floats and how they work.
